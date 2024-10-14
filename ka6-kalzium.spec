@@ -165,6 +165,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/64x64/apps/kalzium.png
 %{_iconsdir}/hicolor/scalable/apps/kalzium.svgz
 %{_datadir}/kalzium
+%dir %{_datadir}/libkdeedu
+%dir %{_datadir}/libkdeedu/data
 %{_datadir}/libkdeedu/data/elements.xml
 %{_datadir}/libkdeedu/data/isotopes.xml
 %{_datadir}/libkdeedu/data/spectra.xml
