@@ -8,7 +8,7 @@
 Summary:	Kalzium
 Name:		ka6-%{kaname}
 Version:	25.04.0
-Release:	1
+Release:	2
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
@@ -17,6 +17,7 @@ URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel
 BuildRequires:	Qt6OpenGL-devel
+BuildRequires:	Qt6Scxml-devel
 BuildRequires:	Qt6Svg-devel
 BuildRequires:	Qt6Widgets-devel
 BuildRequires:	cmake >= 3.20
@@ -25,7 +26,9 @@ BuildRequires:	kf6-extra-cmake-modules >= %{kframever}
 BuildRequires:	kf6-karchive-devel >= %{kframever}
 BuildRequires:	kf6-kconfig-devel >= %{kframever}
 BuildRequires:	kf6-kcoreaddons-devel >= %{kframever}
+BuildRequires:	kf6-kcrash-devel >= %{kframever}
 BuildRequires:	kf6-kdoctools-devel >= %{kframever}
+BuildRequires:	kf6-kguiaddons-devel >= %{kframever}
 BuildRequires:	kf6-ki18n-devel >= %{kframever}
 BuildRequires:	kf6-kparts-devel >= %{kframever}
 BuildRequires:	kf6-kplotting-devel >= %{kframever}
