@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.04.3
+%define		kdeappsver	25.08.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kalzium
 Summary:	Kalzium
 Name:		ka6-%{kaname}
-Version:	25.04.3
+Version:	25.08.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	eab523eb4d9ffc218cba64265997bd2d
+# Source0-md5:	662888b168d4f203efad21aa19abd1a6
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel
@@ -167,12 +167,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_desktopdir}/org.kde.kalzium.desktop
 %{_desktopdir}/org.kde.kalzium_cml.desktop
 %{_datadir}/config.kcfg/kalzium.kcfg
-%{_iconsdir}/hicolor/128x128/apps/kalzium.png
-%{_iconsdir}/hicolor/16x16/apps/kalzium.png
-%{_iconsdir}/hicolor/22x22/apps/kalzium.png
-%{_iconsdir}/hicolor/32x32/apps/kalzium.png
-%{_iconsdir}/hicolor/48x48/apps/kalzium.png
-%{_iconsdir}/hicolor/64x64/apps/kalzium.png
+%{_iconsdir}/hicolor/*x*/apps/kalzium.png
 %{_iconsdir}/hicolor/scalable/apps/kalzium.svgz
 %{_datadir}/kalzium
 %dir %{_datadir}/libkdeedu
@@ -185,6 +180,21 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/kalzium.1*
 %{_datadir}/metainfo/org.kde.kalzium.appdata.xml
 %{_datadir}/qlogging-categories6/kalzium.categories
+%{_mandir}/ca/man1/kalzium.1*
+%{_mandir}/da/man1/kalzium.1*
+%{_mandir}/de/man1/kalzium.1*
+%{_mandir}/es/man1/kalzium.1*
+%{_mandir}/et/man1/kalzium.1*
+%{_mandir}/fr/man1/kalzium.1*
+%{_mandir}/gl/man1/kalzium.1*
+%{_mandir}/it/man1/kalzium.1*
+%{_mandir}/nl/man1/kalzium.1*
+%{_mandir}/pl/man1/kalzium.1*
+%{_mandir}/pt/man1/kalzium.1*
+%{_mandir}/pt_BR/man1/kalzium.1*
+%{_mandir}/ru/man1/kalzium.1*
+%{_mandir}/sv/man1/kalzium.1*
+%{_mandir}/uk/man1/kalzium.1*
 
 %files devel
 %defattr(644,root,root,755)
