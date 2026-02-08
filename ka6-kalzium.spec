@@ -8,7 +8,7 @@
 Summary:	Kalzium
 Name:		ka6-%{kaname}
 Version:	25.12.2
-Release:	1
+Release:	2
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
@@ -17,6 +17,7 @@ URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel
 BuildRequires:	Qt6OpenGL-devel
+BuildRequires:	Qt6Qt5Compat-devel
 BuildRequires:	Qt6Scxml-devel
 BuildRequires:	Qt6Svg-devel
 BuildRequires:	Qt6Widgets-devel
